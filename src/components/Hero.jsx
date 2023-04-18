@@ -13,6 +13,7 @@ const Hero = () => {
       className=" text-white bg-gradient-to-r from-[#1c185b]   via-[#2e299c] to-[#1e1a74]  pb-10"
     >
       <Navbar />
+
       <div className="w-medium mx-auto grid md:grid-cols-2 gap-5  items-center ">
         <div>
           <h2 className="md:text-7xl text-5xl font-bold mb-5 ">

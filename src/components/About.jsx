@@ -2,13 +2,13 @@ import React from "react";
 import mockup from "../assets/mockup-bg.jpeg";
 const About = () => {
   return (
-    <div id="about" className="md:py-28 py-10 relative">
+    <div id="about" className="md:py-24 py-10 relative">
       <div className="w-mobile md:w-medium mx-auto grid md:grid-cols-2 items-center z-50">
         <div className="md:h-[600px] md:w-[500px] w-full bg-my_yellow rounded-md">
           <img className="h-full w-full rounded-md" src={mockup} alt="" />
         </div>
         <div className="space-y-3">
-          <h2 className="text-my_blue ">About mech connect</h2>
+          <h2 className="text-my_yellow text-lg">About Mech Connect</h2>
           <h2 className="text-4xl font-bold">A study of creativity</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
