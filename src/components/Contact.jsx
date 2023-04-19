@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="py-24 ">
+    <div id="contact" className="md:py-24 py-16 ">
       <div className="w-mobile md:w-medium mx-auto grid gap-10 md:gap-0 md:grid-cols-3 rounded-lg ">
         <div className="md:col-span-2 md:p-5">
           <div className="mb-5">
@@ -43,7 +43,7 @@ const Contact = () => {
             <div>
               <button
                 onClick={(e) => e.preventDefault()}
-                className="hover:bg-yellow-500 transition-all bg-my_yellow text-white px-10 py-4 rounded-full"
+                className=" bg-my_yellow text-white px-10 py-4 rounded-full"
               >
                 Send Message
               </button>

@@ -1,22 +1,28 @@
 import React from "react";
 import mockup from "../assets/mockup-bg.jpeg";
+import playstore from "../assets/playstore.png";
 const About = () => {
   return (
-    <div id="about" className="md:py-24 py-10 relative">
-      <div className="w-mobile md:w-medium mx-auto grid md:grid-cols-2 items-center z-50">
+    <div id="about" className="md:py-14 pb-0 md:pb-16  relative">
+      <div className="w-mobile md:w-medium mx-auto grid md:grid-cols-2 md:gap-0 gap-7 items-center z-50">
         <div className="md:h-[600px] md:w-[500px] w-full bg-my_yellow rounded-md">
           <img className="h-full w-full rounded-md" src={mockup} alt="" />
         </div>
         <div className="space-y-3">
-          <h2 className="text-my_yellow text-lg">About Mech Connect</h2>
-          <h2 className="text-4xl font-bold">A study of creativity</h2>
+          <h2 className="text-5xl font-bold">Make Money Online</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem cum aperiam ullam dolores natus inventore?
+            Download MechConnect on google playstore and sign up as a mechanic
+            to get connected to clients near you.
           </p>
-          <button className="py-3 px-5 bg-my_yellow text-white  rounded-full  ">
-            Contact us
-          </button>
+
+          <a
+            target="_blank"
+            href="https://play.google.com/store/search?q=mech+connect&c=apps"
+          >
+            <button>
+              <img className="h-36 flex" src={playstore} alt="" />
+            </button>
+          </a>
         </div>
       </div>
       <div className="hidden md:block bg-gray-100 absolute top-[25%] h-[350px] w-full -z-10 "></div>

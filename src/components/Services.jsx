@@ -1,126 +1,18 @@
 import React from "react";
-import mockup from "../assets/mockup.jpeg";
 import mechanic from "../assets/mechanic_pic.jpg";
 
 import accident from "../assets/accident.jpg";
 const Services = () => {
   return (
-    // <div id="services" className="py-10 ">
-    //   <div className="w-mobile md:w-medium mx-auto">
-    //     <h2 className="text-3xl font-bold my-7">Our Awesome Services</h2>
-    //     <div className="grid md:grid-cols-4  gap-10">
-    //       <div className="space-y-2 flex flex-col items-center">
-    //         <p>
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             fill="none"
-    //             viewBox="0 0 24 24"
-    //             strokeWidth={1.5}
-    //             stroke="currentColor"
-    //             className="w-10 h-10 text-my_blue"
-    //           >
-    //             <path
-    //               strokeLinecap="round"
-    //               strokeLinejoin="round"
-    //               d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-    //             />
-    //           </svg>
-    //         </p>
-    //         <h2 className="text-lg text-my_blue font-bold">
-    //           Mechanical problems
-    //         </h2>
-    //         <p>
-    //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. ectus
-    //           beatae. In, error temporibus.
-    //         </p>
-    //       </div>
-    //       <div className="space-y-2 flex flex-col items-center">
-    //         <p>
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             fill="none"
-    //             viewBox="0 0 24 24"
-    //             strokeWidth={1.5}
-    //             stroke="currentColor"
-    //             className="w-10 h-10 text-my_blue"
-    //           >
-    //             <path
-    //               strokeLinecap="round"
-    //               strokeLinejoin="round"
-    //               d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-    //             />
-    //           </svg>
-    //         </p>
-    //         <h2 className="text-lg text-my_blue font-bold">
-    //           Mechanical problems
-    //         </h2>
-    //         <p>
-    //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. ectus
-    //           beatae. In, error temporibus.
-    //         </p>
-    //       </div>
-    //       <div className="space-y-2 flex flex-col items-center">
-    //         <p>
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             fill="none"
-    //             viewBox="0 0 24 24"
-    //             strokeWidth={1.5}
-    //             stroke="currentColor"
-    //             className="w-10 h-10 text-my_blue"
-    //           >
-    //             <path
-    //               strokeLinecap="round"
-    //               strokeLinejoin="round"
-    //               d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-    //             />
-    //           </svg>
-    //         </p>
-    //         <h2 className="text-lg text-my_blue font-bold">
-    //           Mechanical problems
-    //         </h2>
-    //         <p>
-    //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. ectus
-    //           beatae. In, error temporibus.
-    //         </p>
-    //       </div>
-    // <div className="space-y-2 flex flex-col items-center">
-    //   <p>
-    //     <svg
-    //       xmlns="http://www.w3.org/2000/svg"
-    //       fill="none"
-    //       viewBox="0 0 24 24"
-    //       strokeWidth={1.5}
-    //       stroke="currentColor"
-    //       className="w-10 h-10 text-my_blue"
-    //     >
-    //       <path
-    //         strokeLinecap="round"
-    //         strokeLinejoin="round"
-    //         d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
-    //       />
-    //     </svg>
-    //   </p>
-    //   <h2 className="text-lg text-my_blue font-bold">
-    //     Mechanical problems
-    //   </h2>
-    //   <p>
-    //     Lorem ipsum dolor sit amet consectetur, adipisicing elit. ectus
-    //     beatae. In, error temporibus.
-    //   </p>
-    // </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div id="services" className="py-20">
+    <div id="services" className="md:py-20 py-10">
       <h2 className="text-3xl font-bold my-7 w-mobile md:w-medium mx-auto">
         Our Awesome Services
       </h2>
-      <div className=" bg-gradient-to-r from-[#1c185b]   via-[#2e299c] to-[#1e1a74]  text-white grid grid-cols-2">
-        <div className="h-[300px] w-full bg-white ">
+      <div className=" bg-gradient-to-r from-[#1c185b]   via-[#2e299c] to-[#1e1a74]  text-white grid md:grid-cols-2">
+        <div className="md:h-[300px] h-full space-y-6 w-full bg-white ">
           <img className="h-full w-full object-cover" src={mechanic} alt="" />
         </div>
-        <div className="h-[300px]  py-4 w-mobile md:w-medium  mx-auto flex flex-col justify-evenly">
+        <div className="md:h-[300px] h-full space-y-6  py-4 w-mobile md:w-medium  mx-auto flex flex-col justify-evenly">
           <div>
             <div className="flex space-x-3">
               <svg
@@ -129,12 +21,17 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-8 h-8 text-yellow-400 "
+                className="w-8 h-8 text-yellow-400"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 />
               </svg>
 
@@ -153,12 +50,12 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-8 h-8 text-yellow-400 "
+                className="w-8 h-8 text-yellow-400"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                  d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
                 />
               </svg>
 
@@ -169,7 +66,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="h-[300px]  py-4 w-mobile md:w-[73%]  mx-auto flex flex-col justify-evenly">
+        <div className="md:h-[300px] h-full space-y-6  py-4 w-mobile md:w-[73%]  mx-auto flex flex-col justify-evenly">
           <div>
             <div className="flex space-x-3">
               <svg
@@ -178,12 +75,12 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-8 h-8 text-yellow-400 "
+                className="w-8 h-8 text-yellow-400"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                  d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
                 />
               </svg>
 
@@ -207,7 +104,7 @@ const Services = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
                 />
               </svg>
 
@@ -218,7 +115,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="h-[300px] w-full bg-white ">
+        <div className="md:h-[300px] h-full space-y-6 w-full bg-white ">
           <img className="h-full w-full object-cover" src={accident} alt="" />
         </div>
       </div>
