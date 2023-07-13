@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../../src/assets/MECH_CONNECT-02-removebg-preview.png";
 import { Link } from "react-scroll";
 const Navbar = () => {
   const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
@@ -21,21 +22,24 @@ const Navbar = () => {
           ? "fixed w-full bg-gradient-to-r from-[#1c185b]   via-[#2e299c] to-[#1e1a74] z-30 top-0 h-[80px]    transition-all duration-300 "
           : "h-[70px] py-14  transition-all duration-300 relative z-30"
       }
+      // className={
+      //   isNavbarScrolled
+      //     ? "fixed w-full  z-30 top-0 h-[80px] bg-white   transition-all duration-300 "
+      //     : "h-[70px] py-14  transition-all duration-300 bg-white relative z-30"
+      // }
     >
       <div className=" h-full  flex  justify-between items-center w-medium mx-auto">
-        <div>
-          <img
-            className=""
-            src={
-              isNavbarScrolled
-                ? "https://res.cloudinary.com/kelvin45/image/upload/c_scale,h_105,r_30,w_115/a_0/v1681805889/logo-transparent_yntzd5.png "
-                : "https://res.cloudinary.com/kelvin45/image/upload/c_scale,h_125,r_30,w_130/a_0/v1681805889/logo-transparent_yntzd5.png"
-            }
-            alt=""
-          />
+        <div className="flex items-center">
+          <div className="h-[100px] flex ">
+            <img className="" src={logo} alt="" />
+          </div>
+          {/* <h2 className="text-2xl font-bold  border-l pl-5">
+            MECH <br />
+            CONNET{" "}
+          </h2> */}
         </div>
         <div className="md:flex hidden justify-between items-center space-x-60">
-          <ul className="flex space-x-4  ">
+          <ul className="flex space-x-4 ">
             <li className="cursor-pointer">
               <Link
                 activeClass="active"

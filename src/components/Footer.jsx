@@ -1,15 +1,19 @@
 import React from "react";
 
 import { Link } from "react-scroll";
+import logo from "../../src/assets/mechconnectwhite-removebg-preview.png";
 const Footer = () => {
   return (
-    <div className="bg-black text-white  ">
+    <div className="bg-black text-white py-3  ">
       <div className="w-mobile md:w-medium mx-auto   flex   justify-between items-center">
         <div>
-          <img
-            src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,h_135,r_30,w_145/a_0/v1681805889/logo-transparent_yntzd5.png"
+          {/* <img
+            src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,h_80,w_233/v1687350046/logo-transparent_lu37bu.jpg"
             alt=""
-          />
+          /> */}
+          <div className="w-64 ">
+            <img src={logo} alt="" />
+          </div>
         </div>
         <div className="">
           <p>
