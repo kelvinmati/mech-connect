@@ -1,7 +1,9 @@
 import React from "react";
 
 import { Link } from "react-scroll";
-import logo from "../../src/assets/mechconnectwhite-removebg-preview.png";
+// import logo from "../../src/assets/mechconnectwhite-removebg-preview.png";
+import logo from "../../src/assets/MECH_CONNECT-02-removebg-preview.png";
+
 const Footer = () => {
   return (
     <div className="bg-black text-white py-3  ">
@@ -11,7 +13,7 @@ const Footer = () => {
             src="https://res.cloudinary.com/kelvin45/image/upload/c_scale,h_80,w_233/v1687350046/logo-transparent_lu37bu.jpg"
             alt=""
           /> */}
-          <div className="w-64 ">
+          <div className=" h-24 flex">
             <img src={logo} alt="" />
           </div>
         </div>
