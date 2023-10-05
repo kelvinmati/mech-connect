@@ -23,6 +23,11 @@ const Footer = () => {
             <span className="text-yellow-500">Mech Connect</span> All rights
             reserved
           </p>
+          <p className="text-blue-500 underline">
+            <a href="https://sites.google.com/view/mechconnect/home">
+              Privacy policy
+            </a>
+          </p>
         </div>
         <div className="">
           <Link
